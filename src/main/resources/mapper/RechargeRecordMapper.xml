@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.geekuniverse.cac.mapper.RechargeRecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.geekuniverse.cac.entity.RechargeRecord">
+        <id column="id" property="id" />
+        <result column="user_id" property="userId" />
+        <result column="recharge_amount" property="rechargeAmount" />
+        <result column="recharge_vip_level" property="rechargeVipLevel" />
+        <result column="recharge_time" property="rechargeTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_id, recharge_amount, recharge_vip_level, recharge_time
+    </sql>
+
+</mapper>
